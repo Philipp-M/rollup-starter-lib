@@ -5,17 +5,22 @@
   "module": "dist/how-long-till-lunch.esm.js",
   "browser": "dist/how-long-till-lunch.umd.js",
   "dependencies": {
-    "ms": "^2.0.0"
+    "ms": "^2.1.2"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^11.0.1",
-    "@rollup/plugin-node-resolve": "^7.0.0",
-    "rollup": "^1.29.0"
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "@rollup/plugin-typescript": "^3.0.0",
+    "@types/ms": "^0.7.31",
+    "rollup": "^1.31.1",
+    "ts-node": "^8.6.2",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5"
   },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "node test/test.js",
+    "test": "ts-node test/test.ts",
     "pretest": "npm run build"
   },
   "files": [
