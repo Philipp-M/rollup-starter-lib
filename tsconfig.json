@@ -2,6 +2,14 @@
   "compilerOptions": {
     "target": "es5",
     "strict": true,
-    "allowSyntheticDefaultImports": true
+    "sourceMap": true,
+    "declaration": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "declarationDir": "dist/types",
+    "typeRoots": [
+      "node_modules/@types"
+    ]
   }
 }
