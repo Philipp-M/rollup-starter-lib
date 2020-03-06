@@ -1,37 +1,37 @@
 import howLongTillLunch from '../src/main';
 
 class MockDate {
-  private date = 0;
+  private _date = 0;
 
-  private hours = 0;
+  private _hours = 0;
 
-  private minutes = 0;
+  private _minutes = 0;
 
-  private seconds = 0;
+  private _seconds = 0;
 
-  private milliseconds = 0;
+  private _milliseconds = 0;
 
-  getDate(): number { return this.date; }
+  getDate(): number { return this._date; }
 
-  setDate(date: number): void { this.date = date; }
+  setDate(date: number): void { this._date = date; }
 
-  setHours(h: number) { this.hours = h; }
+  setHours(h: number) { this._hours = h; }
 
-  setMinutes(m: number): void { this.minutes = m; }
+  setMinutes(m: number): void { this._minutes = m; }
 
-  setSeconds(s: number): void { this.seconds = s; }
+  setSeconds(s: number): void { this._seconds = s; }
 
-  setMilliseconds(ms: number): void { this.milliseconds = ms; }
+  setMilliseconds(ms: number): void { this._milliseconds = ms; }
 
   getTime(): number { return this.valueOf(); }
 
   valueOf(): number {
     return (
-      this.milliseconds
-      + this.seconds * 1e3
-      + this.minutes * 1e3 * 60
-      + this.hours * 1e3 * 60 * 60
-      + this.date * 1e3 * 60 * 60 * 24
+      this._milliseconds
+      + this._seconds * 1e3
+      + this._minutes * 1e3 * 60
+      + this._hours * 1e3 * 60 * 60
+      + this._date * 1e3 * 60 * 60 * 24
     );
   }
 

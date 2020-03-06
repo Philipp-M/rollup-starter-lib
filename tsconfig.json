@@ -1,13 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es5",
+    "target": "es6",
     "strict": true,
     "sourceMap": true,
     "declaration": true,
+    "module": "ESNext",
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "declarationDir": "dist/types",
+    "moduleResolution": "node",
     "typeRoots": [
       "node_modules/@types"
     ]
